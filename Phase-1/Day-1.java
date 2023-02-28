@@ -1,4 +1,4 @@
-public class{
+public class Day1{
 	public static void main(String[] args){
 		int[] items = { 10, 0, 30, 2, 7, 5, 90, 76, 100, 45, 55 };   // Min = 0, Max = 100
 		
@@ -27,10 +27,10 @@ public class{
 	
 	// Puesdocode for Approach-1
 	/*Initialize the max and min with first item in the array
-    Iterate the array from second position (index 1)
-	Compare the ith item with max and min
-	if current item is greater than max
+          Iterate the array from second position (index 1)
+	   Compare the ith item with max and min
+	    if current item is greater than max
 		set max = current item
-	 elseif current item is lower than min
+	    elseif current item is lower than min
 	 	set min = current item*/
 }
