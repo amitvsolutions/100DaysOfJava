@@ -33,7 +33,7 @@ public class Day1{
 	// Puesdocode for Approach-1
 	/*Initialize the max and min with first item in the array
           Iterate the array from second position (index 1)
-	   Compare the ith item with max and min
+	  Compare the ith item with max and min
 	    if current item is greater than max
 		set max = current item
 	    elseif current item is lower than min
