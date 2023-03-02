@@ -13,8 +13,7 @@ public class Day002{
 		
 		//Approach-1
 		Random generator = new Random();		
-		Set<Integer> uniuqeRandomNumbers = new LinkedHashSet<Integer>();
-		
+		Set<Integer> uniuqeRandomNumbers = new LinkedHashSet<Integer>();		
 		while(uniuqeRandomNumbers.size()<10) {
 			uniuqeRandomNumbers.add(generator.nextInt(20));
 		}
