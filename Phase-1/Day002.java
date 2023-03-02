@@ -4,6 +4,7 @@ import java.util.LinkedHashSet;
 import java.util.Random;
 import java.util.Set;
 import java.util.stream.Collectors;
+import java.security.SecureRandom;
 
 public class Day002{
 	
@@ -20,10 +21,18 @@ public class Day002{
 		System.out.println(uniuqeRandomNumbers);
 		
 		//Approach-2
+		SecureRandom secureGenerator = new SecureRandom();		
+		Set<Integer> uniuqeSecureRandomNumbers = new LinkedHashSet<Integer>();
+		
+		while(uniuqeSecureRandomNumbers.size()<10) {
+			uniuqeSecureRandomNumbers.add(secureGenerator.nextInt(20));
+		}
+		System.out.println(uniuqeSecureRandomNumbers);
+		
+		//Approach-3
 		Set<Object> distinctRandomNumbers = new Random().ints(10, 25)
 				  .distinct().limit(10)
 				  .boxed().collect(Collectors.toSet());
-		System.out.println(distinctRandomNumbers);
-		
+		System.out.println(distinctRandomNumbers);		
 	}
 }
