@@ -15,3 +15,9 @@ public class Day006{
       }
    }	
 }
+
+/*
+The considerable difference between break and continue is that the break exits a loop at once.
+Once a break statement is executed, the loop will not run again. However, after executing
+the continue statement, the following lines of code will be skipped for the current iteration only
+*/
