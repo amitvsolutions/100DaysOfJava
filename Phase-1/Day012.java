@@ -1,5 +1,6 @@
-public class{
-	// Function to remove adjacent duplicates characters from a string
+public class Day012{
+	
+    // Function to remove adjacent duplicates characters from a string
     public static String removeDuplicates(String s)
     {
         // base case
@@ -18,8 +19,7 @@ public class{
                 chars[k++] = c;
                 prev = c;
             }
-        }
- 
+        } 
         return new String(chars).substring(0, k);
     }
  
